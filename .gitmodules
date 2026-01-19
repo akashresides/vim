@@ -1,0 +1,18 @@
+[submodule "pack/downloads/opt/devdocs"]
+	path = pack/downloads/opt/devdocs
+	url = https://github.com/girishji/devdocs.vim.git
+[submodule "pack/downloads/opt/lsp"]
+	path = pack/downloads/opt/lsp
+	url = https://github.com/yegappan/lsp
+[submodule "pack/plugins/start/fuzzbox"]
+	path = pack/plugins/start/fuzzbox
+	url = https://github.com/vim-fuzzbox/fuzzbox.vim
+[submodule "pack/plugins/start/vim-qf"]
+	path = pack/plugins/start/vim-qf
+	url = https://github.com/romainl/vim-qf
+[submodule "pack/tpope/start/repeat"]
+	path = pack/tpope/start/repeat
+	url = https://tpope.io/vim/repeat.git
+[submodule "pack/tpope/start/surround"]
+	path = pack/tpope/start/surround
+	url = https://tpope.io/vim/surround.git
