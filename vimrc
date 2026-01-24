@@ -1,17 +1,17 @@
+source $VIMRUNTIME/defaults.vim
 let g:mapleader=" "
 let g:netrw_banner=0
 let g:netrw_liststyle=3
 let g:skip_defaults_vim=1
-source $VIMRUNTIME/defaults.vim
-set rnu cul tgc ac nosmd is hls ic scs
-set fillchars=eob:·
 set complete^=o
+set cmdheight=2
+set laststatus=2
+set fillchars+=eob:·
+set foldmethod=indent
+set wildoptions=pum,fuzzy
 set completeopt+=fuzzy,popup
 set wildmode^=noselect:lastused
-set wildoptions=pum,fuzzy
-set laststatus=2
-set cmdheight=2
-set foldmethod=indent
+set rnu cul tgc ac nosmd hls ic scs sb
 
 colorscheme catppuccin_mocha
 hi Normal guibg=NONE
