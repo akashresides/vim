@@ -24,13 +24,13 @@ nnoremap <Leader>w <C-w>
 nnoremap <C-w> <Nop>
 
 runtime ftplugin/man.vim
-packadd hlyank
 packadd comment
 packadd nohlsearch
 packadd helpcurwin
 packadd helptoc
 packadd matchit
 packadd termdebug
+packadd vimbits
 packadd devdocs
 nnoremap <leader>d :DevdocsFind<CR>
 
@@ -47,12 +47,12 @@ call LspOptionsSet(#{
         \   showInlayHints: v:true,
 	\   semanticHighlight: v:true	
 	\ })
-call LspAddServer([#{
-	\    name: 'clangd',
-	\    filetype: ['c', 'cpp'],
-	\    path: '/usr/bin/clangd',
-	\    args: ['--background-index', '--clang-tidy']
-	\  }])
+" call LspAddServer([#{
+" 	\    name: 'clangd',
+" 	\    filetype: ['c', 'cpp'],
+" 	\    path: '/usr/bin/clangd',
+" 	\    args: ['--background-index', '--clang-tidy']
+" 	\  }])
 call LspAddServer([#{
 	\    name: 'golang',
 	\    filetype: ['go', 'gomod'],
@@ -76,6 +76,6 @@ call LspAddServer([#{
 call LspAddServer([#{
 	\   name: 'ty',
 	\   filetype: 'python',
-	\   path: '/home/akash/.local/bin/ty',
+	\   path: '/usr/bin/ty',
 	\   args: ['server']
 	\ }])

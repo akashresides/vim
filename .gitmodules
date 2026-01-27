@@ -10,9 +10,6 @@
 [submodule "pack/plugins/start/vim-qf"]
 	path = pack/plugins/start/vim-qf
 	url = https://github.com/romainl/vim-qf
-[submodule "pack/tpope/start/repeat"]
-	path = pack/tpope/start/repeat
-	url = https://tpope.io/vim/repeat.git
-[submodule "pack/tpope/start/surround"]
-	path = pack/tpope/start/surround
-	url = https://tpope.io/vim/surround.git
+[submodule "pack/downloads/opt/vimbits"]
+	path = pack/downloads/opt/vimbits
+	url = https://github.com/girishji/vimbits
