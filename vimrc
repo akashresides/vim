@@ -9,19 +9,17 @@ set laststatus=2
 set fillchars+=eob:·
 set foldmethod=indent
 set wildoptions=pum,fuzzy
-set completeopt+=fuzzy,popup
 set wildmode^=noselect:lastused
-set rnu cul tgc ac nosmd hls ic scs sb
+set completeopt+=fuzzy,popup
+set rnu cul tgc ac nosmd hls ic scs spr sb cf
 
 colorscheme catppuccin_mocha
 hi Normal guibg=NONE
 
-autocmd CmdlineChanged [:\/\?] call wildtrigger()
-
+autocmd CmdlineChanged [:/?] if getcmdline() =~# '!' | else | call wildtrigger() | endif
 inoremap <silent><expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <silent><expr> <*S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-nnoremap <Leader>w <C-w>
-nnoremap <C-w> <Nop>
+noremap W <C-W>
 
 runtime ftplugin/man.vim
 packadd comment
